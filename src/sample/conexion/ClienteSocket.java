@@ -14,7 +14,7 @@ public class ClienteSocket {
     public void connectToServer(Object message){
         try{
             host = InetAddress.getLocalHost();
-            cliente = new Socket(host, 6000);
+            cliente = new Socket(host, 8000);
 
             BufferedReader entrada = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
             System.out.println(entrada.readLine());

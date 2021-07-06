@@ -17,7 +17,7 @@ public class ServidorSocket {
     public String iniciarServidor(){
         try{
             activate = true;
-            servidor = new ServerSocket(6000);
+            servidor = new ServerSocket(8000);
             cliente = servidor.accept();
             PrintStream escritura = new PrintStream(cliente.getOutputStream());
             escritura.println("");

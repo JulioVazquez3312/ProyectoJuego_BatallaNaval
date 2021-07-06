@@ -40,7 +40,7 @@ public class Seleccion extends Stage implements EventHandler {
     }
 
     public void UICreate(int quant, String[] imgEnemyPosition){
-        lblInstructions = new Label("Selecciona un campo con la coordenada 'n-n' para establecer el barco, tienes " + quant + " disponibles");
+        lblInstructions = new Label("Selecciona una coordenada, hay " + quant + " barcos disponibles");
         hBoxBtn= new HBox[10];
         hBoxGrid= new HBox();
         vBoxBtn = new VBox();
